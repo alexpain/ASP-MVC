@@ -16,6 +16,7 @@ namespace MVC_T1.Controllers
             ViewBag.accur = 1;
             ViewBag.NumberByMathPow = 1;
             ViewBag.result = SqrtCalculate.SqrtN(1, 1, 0);
+            ViewBag.sing = "=";
             return View();
         }
 

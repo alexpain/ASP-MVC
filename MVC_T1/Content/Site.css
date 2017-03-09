@@ -32,3 +32,6 @@ form{
     border-radius: 10px;
 }
 
+input[name="binary"]{
+    width: 280px;
+}
