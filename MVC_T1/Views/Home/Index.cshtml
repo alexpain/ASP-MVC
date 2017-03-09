@@ -2,13 +2,13 @@
 <form action="" method="post" role="form">
     <div class="form-group">
         <label class="control-label">N:<br />
-            <input class="form-control" type="number" name="n" value="@ViewBag.n" placeholder="1-999" min="1" />
+            <input class="form-control" type="number" name="n" value="@ViewBag.n" placeholder="1-999999999" min="1" max="999999999"/>
         </label>
         <label class="control-label">Pow:<br />
-            <input class="form-control" type="number" name="pow" value="@ViewBag.pow" placeholder="2-999" min="2" />
+            <input class="form-control" type="number" name="pow" value="@ViewBag.pow" placeholder="2-99" min="2" max="99"/>
         </label><br />
         <label class="control-label">Accuracy:<br />
-            <input class="form-control" type="number" name="accur" value="@ViewBag.accur" placeholder="0-999" />
+            <input class="form-control" type="number" name="accur" value="@ViewBag.accur" placeholder="0-20" min="0" max="20"/>
         </label><br />
         <input class="btn btn-info" type="submit" name="calculate" value="calculate" /><br />
     </div>     
@@ -22,7 +22,9 @@
         <label class="control-label">Math.Pow: <br />
             <input class="form-control" type="text" name="result" value="@ViewBag.resultMathPow" disabled />
         </label><br />
-        <label class="control-label">Binary: <br /><input class="form-control" type="text" name="result" value="@ViewBag.binary" disabled /></label>
+        <label class="control-label">Binary: <br />
+            <input class="form-control" type="text" name="result" value="@ViewBag.binary" disabled />
+        </label>
     </div>
     
 </form>

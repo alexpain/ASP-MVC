@@ -7,7 +7,7 @@ namespace CalculateAndConvert
 {
     public class SqrtCalculate
     {
-
+        
         private static double myPow(double a, int pow)
         {
             double result = 1;
