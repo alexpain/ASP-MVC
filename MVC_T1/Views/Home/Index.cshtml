@@ -1,0 +1,28 @@
+﻿
+<form action="" method="post" role="form">
+    <div class="form-group">
+        <label class="control-label">N:<br />
+            <input class="form-control" type="number" name="n" value="@ViewBag.n" placeholder="1-999" min="1" />
+        </label>
+        <label class="control-label">Pow:<br />
+            <input class="form-control" type="number" name="pow" value="@ViewBag.pow" placeholder="2-999" min="2" />
+        </label><br />
+        <label class="control-label">Accuracy:<br />
+            <input class="form-control" type="number" name="accur" value="@ViewBag.accur" placeholder="0-999" />
+        </label><br />
+        <input class="btn btn-info" type="submit" name="calculate" value="calculate" /><br />
+    </div>     
+    <div class="form-group">
+        <label class="control-label">MyPow: <br />
+            <input class="form-control" type="text" name="result" value="@ViewBag.result" disabled />
+        </label>
+        <label class="control-label">
+            @ViewBag.sign
+        </label>
+        <label class="control-label">Math.Pow: <br />
+            <input class="form-control" type="text" name="result" value="@ViewBag.resultMathPow" disabled />
+        </label><br />
+        <label class="control-label">Binary: <br /><input class="form-control" type="text" name="result" value="@ViewBag.binary" disabled /></label>
+    </div>
+    
+</form>
